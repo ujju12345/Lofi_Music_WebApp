@@ -1,10 +1,12 @@
 import React from 'react';
 import './App.css'
+import Min_Sidebar from './components/Min_Sidebar';
+import Max_Sidebar from './components/Max_Sidebar';
+
 function App() {
   return (
-    <div >
-      <h1>Shuru Hoja</h1>
-    </div>
+    <Min_Sidebar />
+    // <Max_Sidebar />
   );
 }
 
