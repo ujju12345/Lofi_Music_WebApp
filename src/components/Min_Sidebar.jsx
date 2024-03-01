@@ -15,6 +15,8 @@ import MailIcon from '@mui/icons-material/Mail';
 import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
+import Background from './Background';
+import { Button } from '@mui/material';
 
 const drawerWidth = 240;
 
@@ -40,24 +42,25 @@ export default function Min_Sidebar(props) {
   };
 
   const drawer = (
-    <div>
-      <Toolbar />
-      <Divider />
+    <div style={{ backgroundColor: '#E3F7FF', height: '95%',display: 'flex', flexDirection: 'column' }}>
+    <Toolbar />
+    <Divider />
+    <List>
+      {['Home', 'Search'].map((text, index) => (
+        <ListItem key={text} disablePadding>
+          <ListItemButton>
+            <ListItemIcon>
+              {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
+            </ListItemIcon>
+            <ListItemText primary={text} />
+          </ListItemButton>
+        </ListItem>
+      ))}
+    </List>
+    <Divider />
+    <div style={{ marginTop: 'auto' }}>
       <List>
-        {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
-          <ListItem key={text} disablePadding>
-            <ListItemButton>
-              <ListItemIcon>
-                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-              </ListItemIcon>
-              <ListItemText primary={text} />
-            </ListItemButton>
-          </ListItem>
-        ))}
-      </List>
-      <Divider />
-      <List>
-        {['All mail', 'Trash', 'Spam'].map((text, index) => (
+        {['Download', 'Setting', 'About us'].map((text, index) => (
           <ListItem key={text} disablePadding>
             <ListItemButton>
               <ListItemIcon>
@@ -69,13 +72,15 @@ export default function Min_Sidebar(props) {
         ))}
       </List>
     </div>
+  </div>
+  
   );
 
   // Remove this const when copying and pasting into your project.
   const container = window !== undefined ? () => window().document.body : undefined;
 
   return (
-    <Box sx={{ display: 'flex' }}>
+    <Box sx={{ display: 'flex' , backgroundColor: '#E3F7FF' , height:'100%'}}>
       <CssBaseline />
       <AppBar
         position="fixed"
@@ -86,17 +91,18 @@ export default function Min_Sidebar(props) {
       >
         <Toolbar>
           <IconButton
-            color="inherit"
-            aria-label="open drawer"
+            size="large"
             edge="start"
-            onClick={handleDrawerToggle}
-            sx={{ mr: 2, display: { sm: 'none' } }}
+            color="inherit"
+            aria-label="menu"
+            sx={{ mr: 2 }}
           >
-            <MenuIcon />
+            {/* <MenuIcon /> */}
           </IconButton>
-          <Typography variant="h6" noWrap component="div">
+          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
             Lofi Music
           </Typography>
+          <Button color="inherit">Login</Button>
         </Toolbar>
       </AppBar>
       <Box
@@ -137,7 +143,10 @@ export default function Min_Sidebar(props) {
         sx={{ flexGrow: 1, p: 3, width: { sm: `calc(100% - ${drawerWidth}px)` } }}
       >
         <Toolbar />
+       <Background/>
       </Box>
+
+  
     </Box>
   );
 }
