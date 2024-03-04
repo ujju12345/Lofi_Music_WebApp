@@ -15,6 +15,11 @@ import MailIcon from '@mui/icons-material/Mail';
 import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
+import ImageCarousel from './ImageCarousel';
+import Player from './Player';
+import Rain from '../assets/WhiteNoise/Rain.wav';
+import Morning from '../assets/WhiteNoise/Morning.wav';
+import Stream from '../assets/WhiteNoise/Stream.wav';
 
 const drawerWidth = 240;
 
@@ -23,6 +28,12 @@ export default function Min_Sidebar(props) {
   const { window } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
   const [isClosing, setIsClosing] = React.useState(false);
+
+  const noise = [
+    {title:"Stream", url:Stream},
+    {title:"Rain", url:Rain},
+    {title:"Morning", url:Morning}
+  ]
 
   const handleDrawerClose = () => {
     setIsClosing(true);
@@ -43,31 +54,16 @@ export default function Min_Sidebar(props) {
     <div>
       <Toolbar />
       <Divider />
-      <List>
-        {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
-          <ListItem key={text} disablePadding>
-            <ListItemButton>
-              <ListItemIcon>
-                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-              </ListItemIcon>
-              <ListItemText primary={text} />
-            </ListItemButton>
-          </ListItem>
-        ))}
-      </List>
+      <div className="box-border h-40 w-100% border-4 ...">
+        <ImageCarousel />
+      </div>
+      <div className="p-4 ..."></div>
+      <Player noise={noise[0]} />
+      <div className="p-4 ..."></div>
+      <Player noise={noise[1]} />
+      <div className="p-4 ..."></div>
+      <Player noise={noise[2]} />
       <Divider />
-      <List>
-        {['All mail', 'Trash', 'Spam'].map((text, index) => (
-          <ListItem key={text} disablePadding>
-            <ListItemButton>
-              <ListItemIcon>
-                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-              </ListItemIcon>
-              <ListItemText primary={text} />
-            </ListItemButton>
-          </ListItem>
-        ))}
-      </List>
     </div>
   );
 
