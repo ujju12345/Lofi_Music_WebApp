@@ -15,6 +15,7 @@ body {
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
+
 #root {
   width: 100%;
   height: 100%;
@@ -151,10 +152,21 @@ body {
 
 #bg-video {
   object-fit: cover;
-  width: 80vw;
+  width: 100vw;
   height: 100vh;
   position: fixed;
   top: 0;
-  left: 20%;
   z-index: 5;
 }
+
+.rhap_progress-container,
+.rhap_progress-bar-show-download,
+.rhap_skip-button ,
+.rhap_repeat-button,
+.rhap_time {
+    display: none !important;
+}
+
+
+
+

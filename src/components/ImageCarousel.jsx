@@ -12,7 +12,7 @@ const ImageCarousel = () => {
     <div className="w-full h-full">
       <SimpleImageSlider
         width="100%"
-        height="25%"
+        height="180px"
         images={images}
         showBullets={true}
         showNavs={true}
