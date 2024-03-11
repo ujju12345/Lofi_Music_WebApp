@@ -15,8 +15,12 @@ import MailIcon from '@mui/icons-material/Mail';
 import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
-import Background from './Background';
+import Player from './Player';
+import Rain from '../assets/WhiteNoise/Rain.wav';
+import Morning from '../assets/WhiteNoise/Morning.wav';
+import Stream from '../assets/WhiteNoise/Stream.wav';
 import { Button } from '@mui/material';
+import Background from './Background';
 
 const drawerWidth = 240;
 
@@ -25,6 +29,12 @@ export default function Min_Sidebar(props) {
   const { window } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
   const [isClosing, setIsClosing] = React.useState(false);
+
+  const noise = [
+    {title:"Stream", url:Stream},
+    {title:"Rain", url:Rain},
+    {title:"Morning", url:Morning}
+  ]
 
   const handleDrawerClose = () => {
     setIsClosing(true);
@@ -42,37 +52,21 @@ export default function Min_Sidebar(props) {
   };
 
   const drawer = (
-    <div style={{ backgroundColor: '#E3F7FF', height: '95%',display: 'flex', flexDirection: 'column' }}>
-    <Toolbar />
-    <Divider />
-    <List>
-      {['Home', 'Search'].map((text, index) => (
-        <ListItem key={text} disablePadding>
-          <ListItemButton>
-            <ListItemIcon>
-              {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-            </ListItemIcon>
-            <ListItemText primary={text} />
-          </ListItemButton>
-        </ListItem>
-      ))}
-    </List>
-    <Divider />
-    <div style={{ marginTop: 'auto' }}>
-      <List>
-        {['Download', 'Setting', 'About us'].map((text, index) => (
-          <ListItem key={text} disablePadding>
-            <ListItemButton>
-              <ListItemIcon>
-                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-              </ListItemIcon>
-              <ListItemText primary={text} />
-            </ListItemButton>
-          </ListItem>
-        ))}
-      </List>
+    <div>
+      <Toolbar />
+      <Divider />
+      <div className="box-border h-40 w-100% border-4 ...">
+        {/* <ImageCarousel /> */}
+      </div>
+      <div className="p-4 ..."></div>
+      <Player noise={noise[0]} />
+      <div className="p-4 ..."></div>
+      <Player noise={noise[1]} />
+      <div className="p-4 ..."></div>
+      <Player noise={noise[2]} />
+      <Divider />
     </div>
-  </div>
+  
   
   );
 
@@ -82,29 +76,7 @@ export default function Min_Sidebar(props) {
   return (
     <Box sx={{ display: 'flex' , backgroundColor: '#E3F7FF' , height:'100%'}}>
       <CssBaseline />
-      <AppBar
-        position="fixed"
-        sx={{
-          width: { sm: `calc(100% - ${drawerWidth}px)` },
-          ml: { sm: `${drawerWidth}px` },
-        }}
-      >
-        <Toolbar>
-          <IconButton
-            size="large"
-            edge="start"
-            color="inherit"
-            aria-label="menu"
-            sx={{ mr: 2 }}
-          >
-            {/* <MenuIcon /> */}
-          </IconButton>
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            Lofi Music
-          </Typography>
-          <Button color="inherit">Login</Button>
-        </Toolbar>
-      </AppBar>
+  
       <Box
         component="nav"
         sx={{ width: { sm: drawerWidth }, flexShrink: { sm: 0 } }}

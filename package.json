@@ -17,6 +17,8 @@
     "@mui/styled-engine-sc": "^6.0.0-alpha.17",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-h5-audio-player": "^3.9.1",
+    "react-simple-image-slider": "^2.4.1",
     "styled-components": "^6.1.8"
   },
   "devDependencies": {
