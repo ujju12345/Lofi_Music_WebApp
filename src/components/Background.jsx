@@ -15,311 +15,309 @@ export default function Background() {
 
   return (
     <>
+      {/* FIRST ROW */}
 
-                                      {/* FIRST ROW */}
+      <div style={{ display: "flex", flexDirection: "row", marginTop: 10 }}>
+        <Card
+          sx={{
+            display: "flex",
+            justifyContent: "space-between",
+            boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px",
+            width: "30%",
+          }}
+        >
+          <Box sx={{ display: "flex", flexDirection: "row", width: "30%" }}>
+            <CardContent sx={{ flex: "1 0 auto" }}>
+              <Typography component="div" variant="h5">
+                Live From Space
+              </Typography>
+              <Typography
+                variant="subtitle1"
+                color="text.secondary"
+                component="div"
+              >
+                Mac Miller
+              </Typography>
+            </CardContent>
+            <Box sx={{ display: "flex", alignItems: "center", pl: 1, pb: 1 }}>
+              <IconButton aria-label="previous">
+                {theme.direction === "rtl" ? (
+                  <SkipNextIcon />
+                ) : (
+                  <SkipPreviousIcon />
+                )}
+              </IconButton>
+              <IconButton aria-label="play/pause">
+                <PlayArrowIcon sx={{ height: 38, width: 38 }} />
+              </IconButton>
+              <IconButton aria-label="next">
+                {theme.direction === "rtl" ? (
+                  <SkipPreviousIcon />
+                ) : (
+                  <SkipNextIcon />
+                )}
+              </IconButton>
+            </Box>
+          </Box>
+          <CardMedia
+            component="img"
+            sx={{ width: 100 }}
+            image="https://img.freepik.com/free-vector/hand-drawn-lo-fi-illustrations_23-2149325745.jpg?size=626&ext=jpg"
+            alt="Live from space album cover"
+          />
+        </Card>
 
-    <div style={{display:'flex' , flexDirection:'row' ,marginTop: 10}}>
-      <Card
-        sx={{
-          display: "flex",
-          justifyContent: "space-between",
-          boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px",
-          width: "30%",
-        }}
-      >
-        <Box sx={{ display: "flex", flexDirection: "row", width: "30%" }}>
-          <CardContent sx={{ flex: "1 0 auto" }}>
-            <Typography component="div" variant="h5">
-              Live From Space
-            </Typography>
-            <Typography
-              variant="subtitle1"
-              color="text.secondary"
-              component="div"
-            >
-              Mac Miller
-            </Typography>
-          </CardContent>
-          <Box sx={{ display: "flex", alignItems: "center", pl: 1, pb: 1 }}>
-            <IconButton aria-label="previous">
-              {theme.direction === "rtl" ? (
-                <SkipNextIcon />
-              ) : (
-                <SkipPreviousIcon />
-              )}
-            </IconButton>
-            <IconButton aria-label="play/pause">
-              <PlayArrowIcon sx={{ height: 38, width: 38 }} />
-            </IconButton>
-            <IconButton aria-label="next">
-              {theme.direction === "rtl" ? (
-                <SkipPreviousIcon />
-              ) : (
-                <SkipNextIcon />
-              )}
-            </IconButton>
+        <Card
+          sx={{
+            display: "flex",
+            justifyContent: "space-between",
+            boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px",
+            width: "30%",
+            marginLeft: 5,
+          }}
+        >
+          <Box sx={{ display: "flex", flexDirection: "row", width: "30%" }}>
+            <CardContent sx={{ flex: "1 0 auto" }}>
+              <Typography component="div" variant="h5">
+                Live From Space
+              </Typography>
+              <Typography
+                variant="subtitle1"
+                color="text.secondary"
+                component="div"
+              >
+                Mac Miller
+              </Typography>
+            </CardContent>
+            <Box sx={{ display: "flex", alignItems: "center", pl: 1, pb: 1 }}>
+              <IconButton aria-label="previous">
+                {theme.direction === "rtl" ? (
+                  <SkipNextIcon />
+                ) : (
+                  <SkipPreviousIcon />
+                )}
+              </IconButton>
+              <IconButton aria-label="play/pause">
+                <PlayArrowIcon sx={{ height: 38, width: 38 }} />
+              </IconButton>
+              <IconButton aria-label="next">
+                {theme.direction === "rtl" ? (
+                  <SkipPreviousIcon />
+                ) : (
+                  <SkipNextIcon />
+                )}
+              </IconButton>
+            </Box>
           </Box>
-        </Box>
-        <CardMedia
-          component="img"
-          sx={{ width: 100 }}
-          image="https://img.freepik.com/free-vector/hand-drawn-lo-fi-illustrations_23-2149325745.jpg?size=626&ext=jpg"
-          alt="Live from space album cover"
-        />
-      </Card>
+          <CardMedia
+            component="img"
+            sx={{ width: 100 }}
+            image="https://img.freepik.com/free-photo/cartoon-lofi-young-manga-style-girl-studying-while-listening-music-raining-street-ai-generative_123827-24916.jpg?size=626&ext=jpg"
+            alt="Live from space album cover"
+          />
+        </Card>
+        <Card
+          sx={{
+            display: "flex",
+            justifyContent: "space-between",
+            boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px",
+            width: "30%",
+            marginLeft: 5,
+          }}
+        >
+          <Box sx={{ display: "flex", flexDirection: "row", width: "30%" }}>
+            <CardContent sx={{ flex: "1 0 auto" }}>
+              <Typography component="div" variant="h5">
+                Live From Space
+              </Typography>
+              <Typography
+                variant="subtitle1"
+                color="text.secondary"
+                component="div"
+              >
+                Mac Miller
+              </Typography>
+            </CardContent>
+            <Box sx={{ display: "flex", alignItems: "center", pl: 1, pb: 1 }}>
+              <IconButton aria-label="previous">
+                {theme.direction === "rtl" ? (
+                  <SkipNextIcon />
+                ) : (
+                  <SkipPreviousIcon />
+                )}
+              </IconButton>
+              <IconButton aria-label="play/pause">
+                <PlayArrowIcon sx={{ height: 38, width: 38 }} />
+              </IconButton>
+              <IconButton aria-label="next">
+                {theme.direction === "rtl" ? (
+                  <SkipPreviousIcon />
+                ) : (
+                  <SkipNextIcon />
+                )}
+              </IconButton>
+            </Box>
+          </Box>
+          <CardMedia
+            component="img"
+            sx={{ width: 100 }}
+            image="https://img.freepik.com/free-photo/cartoon-lofi-young-manga-style-girl-studying-while-listening-music-raining-street-ai-generative_123827-24916.jpg?size=626&ext=jpg"
+            alt="Live from space album cover"
+          />
+        </Card>
+      </div>
 
-      <Card
-        sx={{
-          display: "flex",
-          justifyContent: "space-between",
-          boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px",
-          width: "30%",
-          marginLeft:5
-        }}
-      >
-        <Box sx={{ display: "flex", flexDirection: "row", width: "30%" }}>
-          <CardContent sx={{ flex: "1 0 auto" }}>
-            <Typography component="div" variant="h5">
-              Live From Space
-            </Typography>
-            <Typography
-              variant="subtitle1"
-              color="text.secondary"
-              component="div"
-            >
-              Mac Miller
-            </Typography>
-          </CardContent>
-          <Box sx={{ display: "flex", alignItems: "center", pl: 1, pb: 1 }}>
-            <IconButton aria-label="previous">
-              {theme.direction === "rtl" ? (
-                <SkipNextIcon />
-              ) : (
-                <SkipPreviousIcon />
-              )}
-            </IconButton>
-            <IconButton aria-label="play/pause">
-              <PlayArrowIcon sx={{ height: 38, width: 38 }} />
-            </IconButton>
-            <IconButton aria-label="next">
-              {theme.direction === "rtl" ? (
-                <SkipPreviousIcon />
-              ) : (
-                <SkipNextIcon />
-              )}
-            </IconButton>
-          </Box>
-        </Box>
-        <CardMedia
-          component="img"
-          sx={{ width: 100 }}
-          image="https://img.freepik.com/free-photo/cartoon-lofi-young-manga-style-girl-studying-while-listening-music-raining-street-ai-generative_123827-24916.jpg?size=626&ext=jpg"
-          alt="Live from space album cover"
-        />
-      </Card>
-         <Card
-        sx={{
-          display: "flex",
-          justifyContent: "space-between",
-          boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px",
-          width: "30%",
-          marginLeft:5
-        }}
-      >
-        <Box sx={{ display: "flex", flexDirection: "row", width: "30%" }}>
-          <CardContent sx={{ flex: "1 0 auto" }}>
-            <Typography component="div" variant="h5">
-              Live From Space
-            </Typography>
-            <Typography
-              variant="subtitle1"
-              color="text.secondary"
-              component="div"
-            >
-              Mac Miller
-            </Typography>
-          </CardContent>
-          <Box sx={{ display: "flex", alignItems: "center", pl: 1, pb: 1 }}>
-            <IconButton aria-label="previous">
-              {theme.direction === "rtl" ? (
-                <SkipNextIcon />
-              ) : (
-                <SkipPreviousIcon />
-              )}
-            </IconButton>
-            <IconButton aria-label="play/pause">
-              <PlayArrowIcon sx={{ height: 38, width: 38 }} />
-            </IconButton>
-            <IconButton aria-label="next">
-              {theme.direction === "rtl" ? (
-                <SkipPreviousIcon />
-              ) : (
-                <SkipNextIcon />
-              )}
-            </IconButton>
-          </Box>
-        </Box>
-        <CardMedia
-          component="img"
-          sx={{ width: 100 }}
-          image="https://img.freepik.com/free-photo/cartoon-lofi-young-manga-style-girl-studying-while-listening-music-raining-street-ai-generative_123827-24916.jpg?size=626&ext=jpg"
-          alt="Live from space album cover"
-        />
-      </Card>
-    </div>
+      {/* Second Row */}
 
-                                      {/* Second Row */}
+      <div style={{ display: "flex", flexDirection: "row", marginTop: 10 }}>
+        <Card
+          sx={{
+            display: "flex",
+            justifyContent: "space-between",
+            boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px",
+            width: "30%",
+          }}
+        >
+          <Box sx={{ display: "flex", flexDirection: "row", width: "30%" }}>
+            <CardContent sx={{ flex: "1 0 auto" }}>
+              <Typography component="div" variant="h5">
+                Live From Space
+              </Typography>
+              <Typography
+                variant="subtitle1"
+                color="text.secondary"
+                component="div"
+              >
+                Mac Miller
+              </Typography>
+            </CardContent>
+            <Box sx={{ display: "flex", alignItems: "center", pl: 1, pb: 1 }}>
+              <IconButton aria-label="previous">
+                {theme.direction === "rtl" ? (
+                  <SkipNextIcon />
+                ) : (
+                  <SkipPreviousIcon />
+                )}
+              </IconButton>
+              <IconButton aria-label="play/pause">
+                <PlayArrowIcon sx={{ height: 38, width: 38 }} />
+              </IconButton>
+              <IconButton aria-label="next">
+                {theme.direction === "rtl" ? (
+                  <SkipPreviousIcon />
+                ) : (
+                  <SkipNextIcon />
+                )}
+              </IconButton>
+            </Box>
+          </Box>
+          <CardMedia
+            component="img"
+            sx={{ width: 100 }}
+            image="https://img.freepik.com/free-vector/hand-drawn-lo-fi-illustrations_23-2149325745.jpg?size=626&ext=jpg"
+            alt="Live from space album cover"
+          />
+        </Card>
 
-                                      <div style={{display:'flex' , flexDirection:'row' , marginTop:10}}>
-      <Card
-        sx={{
-          display: "flex",
-          justifyContent: "space-between",
-          boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px",
-          width: "30%",
-        }}
-      >
-        <Box sx={{ display: "flex", flexDirection: "row", width: "30%" }}>
-          <CardContent sx={{ flex: "1 0 auto" }}>
-            <Typography component="div" variant="h5">
-              Live From Space
-            </Typography>
-            <Typography
-              variant="subtitle1"
-              color="text.secondary"
-              component="div"
-            >
-              Mac Miller
-            </Typography>
-          </CardContent>
-          <Box sx={{ display: "flex", alignItems: "center", pl: 1, pb: 1 }}>
-            <IconButton aria-label="previous">
-              {theme.direction === "rtl" ? (
-                <SkipNextIcon />
-              ) : (
-                <SkipPreviousIcon />
-              )}
-            </IconButton>
-            <IconButton aria-label="play/pause">
-              <PlayArrowIcon sx={{ height: 38, width: 38 }} />
-            </IconButton>
-            <IconButton aria-label="next">
-              {theme.direction === "rtl" ? (
-                <SkipPreviousIcon />
-              ) : (
-                <SkipNextIcon />
-              )}
-            </IconButton>
+        <Card
+          sx={{
+            display: "flex",
+            justifyContent: "space-between",
+            boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px",
+            width: "30%",
+            marginLeft: 5,
+          }}
+        >
+          <Box sx={{ display: "flex", flexDirection: "row", width: "30%" }}>
+            <CardContent sx={{ flex: "1 0 auto" }}>
+              <Typography component="div" variant="h5">
+                Live From Space
+              </Typography>
+              <Typography
+                variant="subtitle1"
+                color="text.secondary"
+                component="div"
+              >
+                Mac Miller
+              </Typography>
+            </CardContent>
+            <Box sx={{ display: "flex", alignItems: "center", pl: 1, pb: 1 }}>
+              <IconButton aria-label="previous">
+                {theme.direction === "rtl" ? (
+                  <SkipNextIcon />
+                ) : (
+                  <SkipPreviousIcon />
+                )}
+              </IconButton>
+              <IconButton aria-label="play/pause">
+                <PlayArrowIcon sx={{ height: 38, width: 38 }} />
+              </IconButton>
+              <IconButton aria-label="next">
+                {theme.direction === "rtl" ? (
+                  <SkipPreviousIcon />
+                ) : (
+                  <SkipNextIcon />
+                )}
+              </IconButton>
+            </Box>
           </Box>
-        </Box>
-        <CardMedia
-          component="img"
-          sx={{ width: 100 }}
-          image="https://img.freepik.com/free-vector/hand-drawn-lo-fi-illustrations_23-2149325745.jpg?size=626&ext=jpg"
-          alt="Live from space album cover"
-        />
-      </Card>
-
-      <Card
-        sx={{
-          display: "flex",
-          justifyContent: "space-between",
-          boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px",
-          width: "30%",
-          marginLeft:5
-        }}
-      >
-        <Box sx={{ display: "flex", flexDirection: "row", width: "30%" }}>
-          <CardContent sx={{ flex: "1 0 auto" }}>
-            <Typography component="div" variant="h5">
-              Live From Space
-            </Typography>
-            <Typography
-              variant="subtitle1"
-              color="text.secondary"
-              component="div"
-            >
-              Mac Miller
-            </Typography>
-          </CardContent>
-          <Box sx={{ display: "flex", alignItems: "center", pl: 1, pb: 1 }}>
-            <IconButton aria-label="previous">
-              {theme.direction === "rtl" ? (
-                <SkipNextIcon />
-              ) : (
-                <SkipPreviousIcon />
-              )}
-            </IconButton>
-            <IconButton aria-label="play/pause">
-              <PlayArrowIcon sx={{ height: 38, width: 38 }} />
-            </IconButton>
-            <IconButton aria-label="next">
-              {theme.direction === "rtl" ? (
-                <SkipPreviousIcon />
-              ) : (
-                <SkipNextIcon />
-              )}
-            </IconButton>
+          <CardMedia
+            component="img"
+            sx={{ width: 100 }}
+            image="https://img.freepik.com/free-photo/cartoon-lofi-young-manga-style-girl-studying-while-listening-music-raining-street-ai-generative_123827-24916.jpg?size=626&ext=jpg"
+            alt="Live from space album cover"
+          />
+        </Card>
+        <Card
+          sx={{
+            display: "flex",
+            justifyContent: "space-between",
+            boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px",
+            width: "30%",
+            marginLeft: 5,
+          }}
+        >
+          <Box sx={{ display: "flex", flexDirection: "row", width: "30%" }}>
+            <CardContent sx={{ flex: "1 0 auto" }}>
+              <Typography component="div" variant="h5">
+                Live From Space
+              </Typography>
+              <Typography
+                variant="subtitle1"
+                color="text.secondary"
+                component="div"
+              >
+                Mac Miller
+              </Typography>
+            </CardContent>
+            <Box sx={{ display: "flex", alignItems: "center", pl: 1, pb: 1 }}>
+              <IconButton aria-label="previous">
+                {theme.direction === "rtl" ? (
+                  <SkipNextIcon />
+                ) : (
+                  <SkipPreviousIcon />
+                )}
+              </IconButton>
+              <IconButton aria-label="play/pause">
+                <PlayArrowIcon sx={{ height: 38, width: 38 }} />
+              </IconButton>
+              <IconButton aria-label="next">
+                {theme.direction === "rtl" ? (
+                  <SkipPreviousIcon />
+                ) : (
+                  <SkipNextIcon />
+                )}
+              </IconButton>
+            </Box>
           </Box>
-        </Box>
-        <CardMedia
-          component="img"
-          sx={{ width: 100 }}
-          image="https://img.freepik.com/free-photo/cartoon-lofi-young-manga-style-girl-studying-while-listening-music-raining-street-ai-generative_123827-24916.jpg?size=626&ext=jpg"
-          alt="Live from space album cover"
-        />
-      </Card>
-         <Card
-        sx={{
-          display: "flex",
-          justifyContent: "space-between",
-          boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px",
-          width: "30%",
-          marginLeft:5
-        }}
-      >
-        <Box sx={{ display: "flex", flexDirection: "row", width: "30%" }}>
-          <CardContent sx={{ flex: "1 0 auto" }}>
-            <Typography component="div" variant="h5">
-              Live From Space
-            </Typography>
-            <Typography
-              variant="subtitle1"
-              color="text.secondary"
-              component="div"
-            >
-              Mac Miller
-            </Typography>
-          </CardContent>
-          <Box sx={{ display: "flex", alignItems: "center", pl: 1, pb: 1 }}>
-            <IconButton aria-label="previous">
-              {theme.direction === "rtl" ? (
-                <SkipNextIcon />
-              ) : (
-                <SkipPreviousIcon />
-              )}
-            </IconButton>
-            <IconButton aria-label="play/pause">
-              <PlayArrowIcon sx={{ height: 38, width: 38 }} />
-            </IconButton>
-            <IconButton aria-label="next">
-              {theme.direction === "rtl" ? (
-                <SkipPreviousIcon />
-              ) : (
-                <SkipNextIcon />
-              )}
-            </IconButton>
-          </Box>
-        </Box>
-        <CardMedia
-          component="img"
-          sx={{ width: 100 }}
-          image="https://img.freepik.com/free-photo/cartoon-lofi-young-manga-style-girl-studying-while-listening-music-raining-street-ai-generative_123827-24916.jpg?size=626&ext=jpg"
-          alt="Live from space album cover"
-        />
-      </Card>
-    </div>
+          <CardMedia
+            component="img"
+            sx={{ width: 100 }}
+            image="https://img.freepik.com/free-photo/cartoon-lofi-young-manga-style-girl-studying-while-listening-music-raining-street-ai-generative_123827-24916.jpg?size=626&ext=jpg"
+            alt="Live from space album cover"
+          />
+        </Card>
+      </div>
     </>
-    
   );
 }
